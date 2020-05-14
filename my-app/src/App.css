@@ -1,10 +1,73 @@
+body{
+  background-color: #333;
+}
+
+header.header{
+  padding: 40px;
+  background-color: #34a5da;
+  text-align: left;
+}
+
+header.header .container{
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+header.header a{
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+header.header a:hover{
+  background-color: darkcyan;
+  color: white;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.userBox{
+  padding: 40px;
+  background-color: white;
+  max-width: 60%;
+  margin: 40px auto;
+  text-align: left;
+  font-size: 18px;
+  position: relative;
+}
+
+.userBox .userNumber{
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.userBox .userInfo h2{
+  border-bottom: 2px solid #34a5da;
+  display: inline-block;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.controls button{
+  margin: 20px;
+  padding: 10px 20px;
+  border: 0px;
+  border-radius: 7px;
+  color: white;
+  background-color: #34a5da;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.controls button:hover{
+  background-color: darkcyan;
+  cursor: pointer;
 }
 
 @media (prefers-reduced-motion: no-preference) {

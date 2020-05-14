@@ -1,18 +1,29 @@
 import React from 'react'
 
+
 function User(props) {
+
+    const arrLength = props.numPeople;
+    
+    const favMovies = props.userProp.favoriteMovies.map(elem => {
+        return (
+             <li>{elem}</li> 
+        )
+      }) 
+
     return (
     <div className="userBox">
-        <div className="user-info">
-            <h2>{props.userProp.name}</h2>
-            <p><span>From:</span>{props.userProp.city}</p>
-            <p><span>Job Title:</span>{props.userProp.title}</p>
-            <p><span>Employer:</span>{props.userProp.employer}</p>
+        <div className="userNumber">{props.userProp.id} / {arrLength}</div>
+        <div className="userInfo">
+            <h2>{props.userProp.name.first} {props.userProp.name.last}</h2>
+            <p><strong>From:</strong> {props.userProp.city}</p>
+            <p><strong>Job Title:</strong> {props.userProp.title}</p>
+            <p><strong>Employer:</strong> {props.userProp.employer}</p>
             <br/>
-            <p><span>Favorite Movies:</span></p>
-            <ul>
-                <li>for loop here{props.userProp.movies}</li>
-            </ul>
+            <p><strong>Favorite Movies:</strong></p>
+            <ol>
+                {favMovies}
+            </ol>
         </div>
     </div>
     )
