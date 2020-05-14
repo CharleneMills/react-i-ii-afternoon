@@ -9,7 +9,7 @@ header.header{
 }
 
 header.header .container{
-  max-width: 60%;
+  max-width: 55%;
   margin: 0 auto;
 }
 
@@ -29,13 +29,13 @@ header.header a:hover{
   text-align: center;
 }
 
-.userBox{
+.userBox {
   padding: 40px;
   background-color: white;
-  max-width: 60%;
+  max-width: 55%;
   margin: 40px auto;
   text-align: left;
-  font-size: 18px;
+  font-size: 22px;
   position: relative;
 }
 

@@ -23,17 +23,29 @@ constructor() {
 
 
 previousUser(){
-  this.setState({
-    currentUser: this.state.currentUser - 1
-  })
+  if(this.state.currentUser <= 0){
+          this.setState({
+            currentUser: this.state.directory.length -1
+          })
+    } else {  
+      this.setState({
+        currentUser: this.state.currentUser - 1
+      })
+    }
 }
 
 
 
 nextUser(){
-  this.setState({
-    currentUser: this.state.currentUser + 1
-  })
+  if(this.state.currentUser >= this.state.directory.length - 1){
+        this.setState({
+          currentUser: 0
+        })
+    } else {
+      this.setState({
+        currentUser: this.state.currentUser + 1
+      })
+    }
 }
 
 
@@ -47,6 +59,7 @@ nextUser(){
           </div>
          )
        }) 
+
 
 
     return (
