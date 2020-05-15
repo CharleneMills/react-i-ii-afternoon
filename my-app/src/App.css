@@ -9,7 +9,7 @@ header.header{
 }
 
 header.header .container{
-  max-width: 55%;
+  max-width: 65%;
   margin: 0 auto;
 }
 
@@ -36,7 +36,7 @@ header.header a:hover{
   max-width: 55%;
   margin: 40px auto;
   text-align: left;
-  font-size: 22px;
+  font-size: 18px;
   position: relative;
 }
 
@@ -53,6 +53,13 @@ header.header a:hover{
   display: inline-block;
   font-size: 28px;
   font-weight: bold;
+}
+
+.controls {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 .controls button{
